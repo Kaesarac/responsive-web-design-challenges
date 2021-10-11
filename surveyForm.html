@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form FCC</title>
+</head>
+<body>
+    <main id="main">
+        <h1 id="title">Should we give Sauron a second chance?</h1>
+        <p id="description">Help the Fellowship of the Ring decide the fate of Middle-Earth's Nemesis.</p><br><br>
+        <form id="survey-form">
+            <label for="name" id="name-label">Full Name:</label><br>
+                <input type="text" id="name" placeholder="your name"><br>
+            <label for="email" id="email-label">Your @pidgeonmail Address:</label><br>
+                <input type="email" id="email" placeholder="example@pidgeonmail.com" pattern=".+@pidgeonmail.com" required><br>
+            <label for="number" id="number-label">Your age (Consider centuries if Elven; regular years for the others.)</label><br>
+                <input type="number" min="1" max="999" size="4" id="number" placeholder="number">
+            <br><br>
+            <p>Have you suffered direct or indirect damages out of Sauron's war efforts?</p>
+            <label for="radio1">
+                <input type="radio" name="radioButton" id="radio1">Yes<br>
+            </label>
+            <label for="radio2">
+                <input type="radio" name="radioButton" id="radio2">No<br>
+            </label>
+            <label for="radio3">
+                <input type="radio" name="radioButton" id="radio3">I still haven't finished burying my dead.<br>
+            </label>
+            
+
+
+
+            <input type="submit" value="Decide">
+
+        </form>
+
+    </main>
+</body>
+</html>
