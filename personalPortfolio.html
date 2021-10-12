@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media only screen and (max-width: 600px) {
+            body{
+                width: 450px;
+            }
+        }
+        header{
+            text-align: center;
+        }
+        body{
+            width: 40em;
+            margin: auto;
+            background-color: thistle;
+        }
+        #navbar{
+            position: fixed;
+            top: 0px;
+            bottom: 10px;
+            left: auto;
+            right: 0;
+        }
+        #navbar a{
+            text-decoration: none;
+            border: solid 1px;
+            padding: 3px;
+            border-color: blueviolet;
+            background-color: violet;
+            border-radius: 5px;
+        }
+        #welcome-section{
+            height: 100vh;
+        }
+        #project-tile{
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+            float: left;
+            max-width: 600px;
+            position: relative;
+            margin: 18px 10px 18px 10px;
+            background-color: snow
+        }
+        label:hover{
+            transform: scale(1.1);
+        }
+        img{
+            height: 600px;
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <a href="#projects">Projects</a>
+        <a id="profile-link" href="https://github.com/Kaesarac" target="_blank">GitHub Profile</a>
+    </nav>
+    <hr>
+    <section id="welcome-section">
+        <header>
+            <h1>Hello There</h1>
+            <p>My name is Ao Ghast, and I kinda think. Therefore I kinda am.</p>
+        </header>   
+        <h2>Current coding skills:</h2>
+        <ul>
+            <li>C - Intermediate</li>
+            <li>C# - Basic</li>
+            <li>JavaScript - Basic</li>
+            <li>HTML/CSS - Intermediate</li>
+            <li>Python - Basic</li>
+            <li>MySQL - Basic</li>
+        </ul>
+        <h2>Goals and objectives:</h2>
+        <ul>
+            <li>Get a job as a Software Developer or Web Developer</li>
+            <li>Be paid in Euro or US Dollars</li>
+            <li>Immigrate to an European Country</li>
+            <li>Purchase a House or Apartment in said Country/li>
+            <li>Shine</li>
+        </ul>
+        <h2>Favorite Singer/Bands (at the moment):</h2>
+        <ul>
+            <li>Yasushi Ishii</li>
+            <li>Skepta</li>
+            <li>Drake</li>
+            <li>Amon Amarth</li>
+            <li>Sentenced</li>
+        </ul>
+    </section>
+    <hr>
+    <section id="projects">
+        <h2>Projects</h2>
+        <label for="mk11" class="project-tile">
+            <legend>A website designed to practice the concepts of the Applied Visual Design, from the FCC Responsive Web Design course.</legend>
+            <a id="mk11" href="https://i.imgur.com/akiOrCC.jpg">
+                <img src="https://i.imgur.com/akiOrCC.jpg" alt="a screenshot of my MK11 proto-site">
+            </a>
+        </label>
+        <label for="shazam" class="project-tile">
+            <legend>A test project for the FCC Responsive Web Design course. It is a fictitious marketing company, that advertises the work of the British Rapper Skepta.</legend>
+            <a id="shazam" href="https://i.imgur.com/zSSktmR.jpg">
+                <img src="https://i.imgur.com/zSSktmR.jpg" alt="a screenshot of my Shazam - Skepta Ad site">
+            </a>
+        </label>
+    </section>
+</body>
+</html>
